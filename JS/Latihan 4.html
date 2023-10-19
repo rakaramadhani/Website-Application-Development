@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKN Bojonegoro</title>
+</head>
+<body>
+    <h1>Javascrip can validate input</h1>
+    <p>Please input number between 1 - 10</p>
+    <input type="number" id="numb" >
+    <button type="button" onclick="myFunction()" > Submit </button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var x, text;
+            x = document.getElementById("numb").value;
+            if(isNaN(x) || x<1 || x>10){
+                text = "Anda salah";
+            }
+            else{
+                text = "Anda Benar"
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>
