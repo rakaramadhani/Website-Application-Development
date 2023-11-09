@@ -3,7 +3,7 @@ require 'function.php';
 
 $id = $_GET ["code_game"];
 
-$mobil = read("SELECT * FROM daftar_game WHERE code_game = '$id'")[0];
+$game = read("SELECT * FROM daftar_game WHERE code_game = '$id'")[0];
 
 
 if (isset( $_POST ["submit"])) {
